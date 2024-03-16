@@ -42,12 +42,12 @@ module.exports = {
     "spotify": {
         "name": "", // for exemple listening to {name} instead of listening to spotify
         "details": "instagram.com/ibrahim.igdr", // title
-        "state": "Playboi Carti", // row below title
+        "state": "opium iboi", // row below title
 
-        "largeImageKey": "spotify:ab67706c0000bebb7a2b848c67b8022da44a222d", // https://github.com/mewzax/Discord-RPC-Selfbot/wiki/Spotify-API
+        "largeImageKey": "spotify:ab67706c0000bebb1f2dfbb414734677b8aafe65", // https://github.com/mewzax/Discord-RPC-Selfbot/wiki/Spotify-API
         "largeImageText": "I AM MUSIC", // will also be second row below title
         
-        "smallImageKey": "spotify:ab67706c0000bebbd4c4dab570a2e33de85a7077",
-        "smallImageText": "opium",
+        "smallImageKey": "spotify:ab67706c0000bebb7dad286467ba6ec728b1c1e0",
+        "smallImageText": "Nike",
     }
 }
