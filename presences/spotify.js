@@ -7,6 +7,8 @@ client.on("ready", async() => {
     console.logger.info(`Logged in as ${client.user.tag}!`)
     let presence = rpc.createSpotifyRpc(client)
         .setType("LISTENING")
+    .setStartTimestamp("" || Date.now())
+    .setEndTimestamp("253402300799000" || Date.now())
 
     if (config.spotify.name) presence.setName(config.spotify.name)
     if (config.spotify.state) presence.setState(config.spotify.state)
@@ -17,9 +19,6 @@ client.on("ready", async() => {
 
     if (config.spotify.largeImageKey && config.spotify.largeImageText) presence.setAssetsLargeText(config.spotify.largeImageText)
     if (config.spotify.smallImageKey &&config.spotify.smallImageText) presence.setAssetsSmallText(config.spotify.smallImageText)
-
-    if (config.spotify.startTimestamp) presence.setStartTimestamp(Date.now())
-    if (config.spotify.endTimestamp) presence.setEndTimestamp(Date.now())
 
     client.user.setPresence(presence.toDiscord())
     if (config.status === 'online' || config.status === 'idle' || config.status === 'dnd') {
